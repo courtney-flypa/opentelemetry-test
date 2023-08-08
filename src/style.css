@@ -1,0 +1,22 @@
+.span {
+  padding: 0.5em;
+  border: 1px solid graY;
+  margin-bottom: 0.5em;
+}
+.span-info,
+.span-info dl {
+  margin-top: 0;
+  display: grid;
+  grid-template-columns: 1fr 4fr;
+  gap: 0.5em;
+}
+.span-info dd {
+  margin-left: 0;
+}
+.span-info time {
+  color: #666;
+}
+.span pre {
+  background: #ddd;
+  padding: 0.5rem;
+}

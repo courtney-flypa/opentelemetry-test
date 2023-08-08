@@ -1,0 +1,56 @@
+<html>
+  <body>
+    <div>
+      <p>Set clock drift</p>
+      <label>
+        <input class="js-drift-value" type="radio" name="drift" value="0" />
+        0
+      </label>
+      <label>
+        <input
+          class="js-drift-value"
+          type="radio"
+          name="drift"
+          value="21600000"
+          checked
+        />
+        6 hours
+      </label>
+      <label>
+        <input
+          class="js-drift-value"
+          type="radio"
+          name="drift"
+          value="111111111"
+        />
+        30h 51m 51.111s
+      </label>
+    </div>
+    <div
+      style="
+        position: fixed;
+        top: 0;
+        right: 0;
+        width: 20rem;
+        background: rgba(220, 220, 220, 0.5);
+        padding: 0.5em;
+      "
+    >
+      Date.now: <span id="date-now-value"></span><br />
+      perf tO + now: <span id="performance-value"></span>
+    </div>
+
+    <div>
+      <button id="do-fetch">Do fetch call</button>
+      <button id="do-week-ago">Create a span week ago</button>
+    </div>
+
+    <hr />
+
+    Generated spans:
+
+    <div id="output"></div>
+
+    <script src="src/index.ts"></script>
+  </body>
+</html>
